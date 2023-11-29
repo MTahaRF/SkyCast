@@ -1,0 +1,69 @@
+body {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: white;
+    margin-bottom: 5cm;
+    height: 100%;
+}
+
+.text {
+    color: black;
+    text-align: center;
+    font-family: 'Roboto', Times, serif;
+    font-size: 125%;
+}
+
+.title {
+    text-align: center;
+    padding-top: 5%;
+    font: bolder;
+    font-family: 'Zen Dots', serif;
+    font-size: 1000%;
+    color: black;
+    margin: auto;
+}
+
+.btn btn-light {
+    padding-right: 2%;
+}
+
+.box {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.button {
+    color: black;
+    position: absolute;
+    left: 46%;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    text-align: end;
+}
+
+@media(max-width: 1000px) {
+    .title {
+        padding-top: 30%;
+        font: bolder;
+        font-family: 'Zen Dots', Times, serif;
+        font-size: 400%;
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    .button {
+        color: black;
+        position: absolute;
+        left: 38%;
+    }
+}

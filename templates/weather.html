@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block Stylesheet %}
+<link rel="stylesheet" href="static/weather.css">
+{% endblock %}
+
+{% block body %}
+<div>
+    <br><br><br>
+    <p class="text">{{ country }},{{ city }}</p>
+    <br>
+    <p class="text">{{ date }}</p>
+    <br>
+    <p class="text">{{ day }}</p>
+    <br>
+    <p class="text">{{ time }}</p>
+    <br><br>
+    <p class="title">{{ temperature }}<span style="font-size: 50%; font: bolder;">&#8451;</span></p>
+    <p class="text">Feels Like: {{feelslike}}<span style="font-size: 60%; font: bolder;">&#8451;</span></p>
+    <br>
+    <img src="{{icon}}" width="10%" class="icon">
+    <br>
+    <p class="text">{{ text }}</p>
+</div>
+<br><br><br><br><br><br>
+<div class="container py-5 text-center table-responsive">
+    <table class="table table-no-border text-center text-capitalize">
+        <p class="text">Forecast</p>
+        <br>
+        <hr><br>
+        <tbody class="ttext">
+            {% for day in forecast %}
+            <tr>
+                <td class="text-center">{{ day['date'] }}</td>
+                <td class="text-center">{{ day['Day'] }}</td>
+                <td class="text-center">{{ day['day']['avgtemp_c'] }}°C</td>
+                <td class="text-center"><img class="smicon" src="{{ day['icon'] }}" alt="Weather Icon"></td>
+                <td class="text-center">{{ day['day']['condition']['text'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <br>
+    <a href="/">
+        <button class="btn btn-outline-dark button mx-auto">Search Another City!</button>
+    </a>
+</div>
+{% endblock %}

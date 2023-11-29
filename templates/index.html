@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block Stylesheet %}
+<link rel="stylesheet" href="static/index.css">
+{% endblock %}
+
+{% block body %}
+<div class="title ">
+    SkyCast
+</div>
+<div class="container mid">
+<form action="/weather">
+    <div class="form-group w-50 box ">
+        <input type="text" class="form-control box" name="country" required placeholder="Country">
+    </div>
+    <br><br>
+        <div class="form-group w-50 box ">
+            <input type="text" class="form-control box" name="city" required placeholder="City">
+        </div>
+    <br><br>
+    <button  type="submit" class="btn btn-outline-dark button mx-auto">SkyCast!</button>
+</form>
+</div>
+{% endblock %}

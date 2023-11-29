@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block Stylesheet %}
+<link rel="stylesheet" href="static/apology.css">
+{% endblock %}
+
+{% block body %}
+<p class="title">!!Error!!</p>
+<img class="icon" src="/static/png/sun.png">
+<p class="text">{{ error }}</p>
+<br>
+<div class="container py-5 text-center">
+<a href="/">
+    <button class="btn btn-outline-dark button mx-auto">Search Another City!</button>
+</a>
+</div>
+{% endblock %}
