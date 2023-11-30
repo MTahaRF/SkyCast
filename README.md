@@ -1,5 +1,5 @@
 # SkyCast - Your Modern Weather Companion
-#### Video Demo: [Your Video URL Here]
+#### Video Demo: https://youtu.be/6iyXZ5flHNI
 
 ## Description:
 Welcome to SkyCast, a sleek and modern web app designed to keep you informed about the current weather and the forecast for the next 7 days. Developed by Mohammed Taha Rafi Farooqui as the final project for CS50, SkyCast offers a user-friendly interface and accurate weather data, making it your go-to weather companion.
