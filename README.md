@@ -15,7 +15,7 @@ The heart of SkyCast, `app.py`, leverages Flask, a Python web framework, to crea
 ## Usage:
 1. Clone the repository to your local machine.
    ```bash
-   git clone [Your Repository URL]
+   git clone https://github.com/MTahaRF/SkyCast
    ```
 
 2. Install the required dependencies.
