@@ -25,7 +25,7 @@ The heart of SkyCast, `app.py`, leverages Flask, a Python web framework, to crea
 
 3. Set up a virtual environment and run the Flask app.
    ```bash
-   python app.py
+   flask run
    ```
 
 4. Access the app in your browser at [http://localhost:5000/](http://localhost:5000/).
